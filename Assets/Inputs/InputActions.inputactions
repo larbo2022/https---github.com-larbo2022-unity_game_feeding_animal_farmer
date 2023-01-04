@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Run",
+                    "name": "feed",
                     "type": "Button",
                     "id": "02c45890-3eef-4a1f-8da7-df90354157c8",
                     "expectedControlType": "Button",
@@ -61,11 +61,11 @@
                 {
                     "name": "",
                     "id": "25d48cc0-b8cb-4cda-97f6-0c59be4e65ab",
-                    "path": "<Keyboard>/leftShift",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Run",
+                    "action": "feed",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
