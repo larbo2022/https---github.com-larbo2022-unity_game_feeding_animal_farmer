@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 66f720e6eca417941a8142444fc6386e, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -832,6 +832,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1266818195, guid: e8b691dd56b143e41ab0ee37613f09eb, type: 3}
+      propertyPath: feedCounter
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 315164277234352783, guid: e8b691dd56b143e41ab0ee37613f09eb, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -889,6 +893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1992760646, guid: b0e2c1c7a08940240b9388f442089aaf, type: 3}
+      propertyPath: feedCounter
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 762003053329039744, guid: b0e2c1c7a08940240b9388f442089aaf, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -946,6 +954,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 178166953, guid: 1332d7224cfeb004eb1ac7773ecc2520, type: 3}
+      propertyPath: feedCounter
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5987939602672465560, guid: 1332d7224cfeb004eb1ac7773ecc2520, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1021,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951030649334801098, guid: 79c6621e838c1b24090c070fe0ba3637, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 41.8
       objectReference: {fileID: 0}
     - target: {fileID: 8951030649334801098, guid: 79c6621e838c1b24090c070fe0ba3637, type: 3}
       propertyPath: m_LocalRotation.w

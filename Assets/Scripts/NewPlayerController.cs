@@ -11,12 +11,11 @@ public class NewPlayerController : MonoBehaviour
     [SerializeField] float rMax = 20f;
 
     private float movementX;
-    Vector2 movementV2;
+    
 
-   // bool isFeedPressed;
-
+   
     // Fonctions pour les Send Messages
-      public void OnMove(InputValue value)
+   /*   public void OnMove(InputValue value)
       {
           movementX = value.Get<float>();
       }
@@ -26,22 +25,18 @@ public class NewPlayerController : MonoBehaviour
         Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
       }
-         
+         */
 
- /* 
+  
     public void OnMoveCharacter(InputAction.CallbackContext ctx)
     {
-
         movementX = ctx.ReadValue<float>();
-        
-
     }
 
     public void OnFeedAnimal(InputAction.CallbackContext ctx)
-    {
-        isFeedPressed = ctx.ReadValueAsButton();
-
-    }   */
+    {        
+        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+    }  
    
 
     private void Update()
@@ -58,17 +53,7 @@ public class NewPlayerController : MonoBehaviour
             transform.position = new Vector3(rMax, transform.position.y, transform.position.z);
         }
 
+      
 
-    /*    if (isFeedPressed)
-        {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-            //feedSound.Play();
-            
-        }  */
-
-     /*  if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-        }  */
     }
 }
