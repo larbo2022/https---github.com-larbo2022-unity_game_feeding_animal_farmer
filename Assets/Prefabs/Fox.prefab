@@ -948,7 +948,6 @@ GameObject:
   - component: {fileID: 762003053329415654}
   - component: {fileID: 1992760645}
   - component: {fileID: 6344594158612865347}
-  - component: {fileID: 1992760646}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -1028,6 +1027,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e7305d020cb9642a7aee5692a1b9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarFill: {fileID: 3497819863646603575, guid: c10ff806c0fd87044ba8b7f87c79c74e, type: 3}
+  maxLife: 100
+  currentLife: 0
 --- !u!65 &6344594158612865347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1041,20 +1043,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12, y: 0.21, z: 0.35}
   m_Center: {x: -0.0067037106, y: 0.12, z: 0.02}
---- !u!114 &1992760646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762003053329485786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe9020617e6a93340beced39cb22cbf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feedCounter: {fileID: 0}
-  collectionSound: {fileID: 0}
 --- !u!1 &762003053329486010
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,25 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// using UnityEngine.UI;
+using UnityEngine.UI;
 
 public class DetectCollisions : MonoBehaviour
 {
-  //  int feed = 0;
+   
+    private PlayerState pState;
+    [SerializeField] Text feedCounter;
+    // [SerializeField] AudioSource collectionSound;
 
-   // [SerializeField] Text feedCounter;
-   // [SerializeField] AudioSource collectionSound;
-    // Start is called before the first frame update
-    
+    void Start()
+    {
+        pState = FindObjectOfType<PlayerState>();
+        if (pState != null)
+        {
+            Debug.Log("c'est bon");
+        }
+        if (pState == null)
+        {
+            Debug.Log("c'est pas bon");
+        }
+    }
 
-    // Update is called once per frame
-    
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
         Destroy(other.gameObject);
-      //  feed++;
-       // feedCounter.text = "" + feed;
+        pState.Feeded();
+        
        // collectionSound.Play();
     }
 }

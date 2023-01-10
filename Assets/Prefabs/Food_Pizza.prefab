@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -1786589194259756978}
   - component: {fileID: 2018093752}
   - component: {fileID: 2018093753}
+  - component: {fileID: -4673380917845328276}
   m_Layer: 0
   m_Name: Food_Pizza
   m_TagString: Untagged
@@ -108,11 +109,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8951030649334775530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50e7305d020cb9642a7aee5692a1b9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarFill: {fileID: 3497819863646603575, guid: c10ff806c0fd87044ba8b7f87c79c74e, type: 3}
+  maxLife: 100
+  currentLife: 0
 --- !u!65 &-1786589194259756978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -154,5 +158,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9020617e6a93340beced39cb22cbf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedCounter: {fileID: 0}
-  collectionSound: {fileID: 0}
+  feedCounter: {fileID: 1299103864853152577, guid: 97dc015c6b9b62541b97fa15fa7a6c17, type: 3}
+--- !u!114 &-4673380917845328276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8951030649334775530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d35944f76b41d40b48e38011e9e30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

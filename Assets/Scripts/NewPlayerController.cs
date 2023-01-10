@@ -34,12 +34,15 @@ public class NewPlayerController : MonoBehaviour
     }
 
     public void OnFeedAnimal(InputAction.CallbackContext ctx)
-    {        
-        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+    {   if(ctx.started)
+        {
+          Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+        
     }  
    
 
-    private void Update()
+    void Update()
     {
         
         transform.Translate(Vector3.right * movementX * speedp * Time.deltaTime);

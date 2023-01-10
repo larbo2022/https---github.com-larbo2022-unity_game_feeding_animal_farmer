@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 315164277234523295}
   - component: {fileID: 1266818194}
   - component: {fileID: 8195070258042084303}
-  - component: {fileID: 1266818195}
   m_Layer: 0
   m_Name: Stag
   m_TagString: Untagged
@@ -91,6 +90,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e7305d020cb9642a7aee5692a1b9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarFill: {fileID: 3497819863646603575, guid: c10ff806c0fd87044ba8b7f87c79c74e, type: 3}
+  maxLife: 100
+  currentLife: 0
 --- !u!65 &8195070258042084303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104,20 +106,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1888622, y: 0.5374779, z: 0.5082523}
   m_Center: {x: -0.020875758, y: 0.23126176, z: 0.036714077}
---- !u!114 &1266818195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315164277234539641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe9020617e6a93340beced39cb22cbf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feedCounter: {fileID: 0}
-  collectionSound: {fileID: 0}
 --- !u!1 &315164277234558455
 GameObject:
   m_ObjectHideFlags: 0
